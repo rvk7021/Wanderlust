@@ -1,0 +1,28 @@
+# Ignore image files
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+*.avif
+
+# Ignore video files
+*.webm
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.flv
+*.wmv
+*.m4v
+*.3gp
+*.mpg
+*.mpeg
+*.ogv
+*.m2ts
+.vscode
+NF-Copy
+NF

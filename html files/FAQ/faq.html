@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq JavaScript</title>
+    <link rel="stylesheet" href="faq.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+   
+
+    
+
+
+
+
+    <div class="container">
+        <h1 class="title">
+            Frequenty Asked Questions
+        </h1>
+        <main class="accordion">
+            <div class="faq-img">
+                <img src="panama.jpg" alt="" class="accordion-img">
+            </div>
+            <div class="content-accordion">
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            How do I book a flight on your website?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>LTo book a flight, simply enter your departure and destination cities, select your travel dates, and click on the "Search" button. You will be presented with a list of available flights, and you can choose the one that suits your preferences. Follow the prompts to complete the booking process.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            What payment methods do you accept?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>We accept various payment methods, including major credit cards (Visa, Mastercard, American Express), debit cards, and online payment systems such as PayPal. During the booking process, you will have the option to choose your preferred payment method.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Can I make changes to my booking after it's confirmed?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>It depends on the airline's policy and the type of ticket you've purchased. Some airlines allow changes with certain restrictions and fees, while others have more rigid policies. We recommend contacting our customer support team as soon as possible to discuss your specific situation and explore the available options.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            What is your cancellation policy?
+
+
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Our cancellation policy varies depending on the airline, hotel, or other travel service provider. We work with multiple partners, each having its own cancellation rules. During the booking process, you will be able to review the cancellation policy for the specific service you are booking. We recommend carefully reading the terms and conditions before making a reservation</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            How can I contact customer support?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>You can reach our customer support team by phone, email, or live chat. Our contact information is available on our website's "Contact Us" page. We strive to provide timely assistance and address any queries or concerns you may have.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script >
+        
+    
+    const questions = document.querySelectorAll('.question-answer');
+
+questions.forEach(function(question) {
+    const btn = question.querySelector('.question-btn');
+    btn.addEventListener("click", function() {
+        questions.forEach(function(item) {
+            if (item !== question) {
+                item.classList.remove("show-text");
+            }
+        })
+        question.classList.toggle("show-text");
+    })
+})
+    </script>
+
+
+
+  
+
+
+</body>
+</html>

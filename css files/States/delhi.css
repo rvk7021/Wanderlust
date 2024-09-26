@@ -1,0 +1,420 @@
+/* do not change this thing */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(taj.jpg);
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+ /* upto this */
+/* do not change this sectionn */
+.header{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 0.569);
+}
+.main{
+    margin-left: 7.5%;
+    background-image: url(bod.jpeg);
+    box-shadow: 10px 10px 10px 2px black;
+    width: 85%;
+    background-size: 100% 100%;
+}
+.location{  
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+
+}
+.detail{
+    background-color: rgba(255, 255, 255, 0.336);
+    border-left: black 2px solid;
+    width: 34%;
+    min-width: 350px;
+   
+}
+
+p{  
+    font-size: 20px;
+    padding: 5px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.name{
+    background-color: rgba(255, 255, 255, 0.628);
+    width:100%;
+    height: auto;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    text-align: center;
+}
+button{
+    border-radius: 5px;
+    margin-top:3%;
+    margin-left: 40%;
+    width: 20%;
+    height: 12%;
+    background-color: black;
+}
+a{
+    text-decoration: none; color: white;
+    font-size: 20px;
+}
+.description{
+    min-width: 350px;
+    background-color: rgba(255, 255, 255, 0.336);
+    width: 30%;
+    height: 100%;
+    overflow-x:scroll ;
+}
+.value{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.description:hover{
+    background-color:rgba(255, 255, 255, 0.555);
+}
+/* upto this */
+video{
+    width: 100%;
+    height: 100%;
+}
+.top1{
+    width: 100%;
+    height: 70vh;
+    margin-bottom:4%;
+}
+.head{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 2%;
+    padding: 0.5%;
+}
+/* rename the class and keep using for same value */
+/* location 1 */
+.slider1{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(red1.jpg);
+    background-size: 100% 100%;
+}
+.slider1:hover{
+    animation: slider1 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider1{
+    0%{ background-image: url(red1.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(red2.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(red3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(red4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(red5.avif);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 2 */
+.slider2{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(huma1.webp);
+    background-size: 100% 100%;
+}
+.slider2:hover{
+    animation: slider2 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider2{
+    0%{ background-image: url(huma1.webp);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(huma2.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(huma3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(huma4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(huma5.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 3 */
+.slider3{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(jama1.webp);
+    background-size: 100% 100%;
+}
+.slider3:hover{
+    animation: slider3 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider3{
+    0%{ background-image: url(jama1.webp);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(jama2.avif);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(jama3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(jama4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(jama5.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 4 */
+.slider4{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(gate1.jpg);
+    background-size: 100% 100%;
+}
+.slider4:hover{
+    animation: slider4 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider4{
+    0%{ background-image: url(gate1.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(gate2.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(gate4.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(gate3.avif);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(gate5.jpg);
+        background-size: 100% 100%;
+    }
+}
+/* location 4 */
+.slider5{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(lotus1.jpg);
+    background-size: 100% 100%;
+}
+.slider5:hover{
+    animation: slider5 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider5{
+    0%{ background-image: url(lotus1.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(lotus2.webp);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(lotus3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(lotus4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(lotus5.webp);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 6 */
+.slider6{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(qutub1.jpg);
+    background-size: 100% 100%;
+}
+.slider6:hover{
+    animation: slider6 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider6{
+    0%{ background-image: url(qutub1.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(qutub2.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(qutub3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(qutub4.webp);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(qutub5.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 6 */
+.slider7{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(pur1.jpg);
+    background-size: 100% 100%;
+}
+.slider7:hover{
+    animation: slider7 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider7{
+    0%{ background-image: url(pur1.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(pur2.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(pur3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(pur4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(pur5.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+/* navigation panel */
+/*  */
+.information{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .gridhead{
+      display: flex;
+      align-content: center;
+      /* background-color: rgba(40, 165, 107, 0.603); */
+      opacity: .98;
+        background-color: #eafbf7;
+        color:black;
+      
+        
+  }
+  
+  .logo{
+      margin: 2rem 10rem 2rem 4rem;
+       font-weight: 600;
+       /* color: rgba(15, 26, 26, 0.909); */
+       
+       font-size: 2.9rem;
+       font-family: 'Raleway', sans-serif;
+        
+  }
+  
+  .l{
+      margin-top: 3rem;
+           margin-left: 22rem;
+           /* color:  rgba(15, 26, 26, 0.909); */
+           
+           font-family: 'Raleway', sans-serif;
+           font-size: 1.1rem;
+  }
+  
+  .ll{
+      margin-top: 3rem;
+      margin-left: 3rem;
+      /* color:  rgb(15, 26, 26); */
+      
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.1rem;
+  }
+  
+  .logo:hover{
+      color: green;
+      cursor: pointer;
+  }
+  
+  .l:hover{
+      cursor: pointer;
+      color: green;
+  }
+  
+  .ll:hover{
+      cursor: pointer;
+      color: green;
+     
+  }

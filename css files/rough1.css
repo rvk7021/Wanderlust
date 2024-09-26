@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Poppins:wght@700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html,body{
+      min-width: 90vw;
+      min-height: 100vh;
+  }
+  
+  body {
+       background-color: #eafbf7;
+       background-image: url(bod.jpeg);
+background-size: 100% 100%;  }
+  .heder{
+       
+      display: grid;
+      place-content: center center;
+  }
+  .hader{
+      font-size: 60px;
+  }
+  .hader:hover{
+      color: #297f3d;
+  }
+  
+  .dstates {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    place-content: space-evenly;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    min-width: 60vw;
+    
+  }
+  
+  .a1,.a2,.a3,.a4,.a5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 0.5rem; */
+    place-content: center center;
+    place-content: space-evenly;
+  }
+  
+  .a {
+    background-image: url(/NF/UP.jpg);
+    background-size: cover;
+  }
+  
+  .b {
+    background-image: url(/NF/delhi.jpg);
+    background-size: cover;
+  }
+  
+  .c {
+    background-image: url(/NF/MP.jpg);
+    background-size: cover;
+  }
+  
+  .d {
+    background-image: url(/NF/Gujarat.jpg);
+    background-size: cover;
+  }
+  
+  .e {
+    background-image: url(/NF/Maharashtra.jpg);
+    background-size: cover;
+  }
+  
+  .f {
+    background-image: url(/NF/Rajasthan.jpg);
+    background-size: cover;
+  }
+  
+  .g {
+    background-image: url(/NF/Kerela.jpg);
+    background-size: cover;
+  }
+  
+  .h {
+    background-image: url(/NF/Andhra\ Pradesh.jpg);
+    background-size: cover;
+  }
+  
+  .i {
+    background-image: url(/NF/Tamil\ Nadu.jpg);
+    background-size: cover;
+  }
+  
+  .j {
+    background-image: url(/NF/punjab.jpg);
+    background-size: cover;
+  }
+  
+  .k {
+    background-image: url(/NF/Karnataka.jpg);
+    background-size: cover;
+  }
+  
+  .li {
+    background-image: url(/NF/Himachal\ Pradesh.jpg);
+    background-size: cover;
+  }
+  
+  .m {
+    background-image: url(/NF/Orrisa.jpg);
+    background-size: cover;
+  }
+  
+  .n {
+    background-image: url(/NF/Chhattisgarh.jpg);
+    background-size: cover;
+  }
+  
+  .o {
+    background-image: url(/NF/Telengana.jpg);
+    background-size: cover;
+  }
+  
+  .a,.b,.c,.d,.e,.f,.g,.h,.i,.j,.k,.li,.m,.n,.o {
+    width: clamp(100px, 380px, 600px);
+    height: clamp(100px, 220px, 500px);
+    margin: 1rem;
+  
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border: 0px solid white;
+    border-radius: 10px;
+    background-position: center;
+    transition: transform 0.3s;
+  }
+  .state:hover,.state:focus {
+    transform: scale(1.1);
+    opacity: 85%;
+  }
+  
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.gridhead{
+    display: flex;
+    align-content: center;
+    /* background-color: rgba(40, 165, 107, 0.603); */
+    opacity: .98;
+      background-color: #eafbf7;
+      color:black;
+    
+      
+}
+
+.logo{
+    margin: 2rem 10rem 2rem 4rem;
+     font-weight: 600;
+     /* color: rgba(15, 26, 26, 0.909); */
+     
+     font-size: 2.9rem;
+     font-family: 'Raleway', sans-serif;
+      
+}
+
+.l{
+    margin-top: 3rem;
+         margin-left: 22rem;
+         /* color:  rgba(15, 26, 26, 0.909); */
+         
+         font-family: 'Raleway', sans-serif;
+         font-size: 1.1rem;
+}
+
+.ll{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    /* color:  rgb(15, 26, 26); */
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+
+.logo:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.l:hover{
+    cursor: pointer;
+    color: green;
+}
+
+.ll:hover{
+    cursor: pointer;
+    color: green;
+   
+}
+
+
+.image-wrapper{
+    overflow: hidden;
+}
+
+/* .image-wrapper{
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      /* position: relative; */
+      /* bottom: 7.4rem;
+      z-index: -1;
+      
+      overflow: hidden;
+      
+} */
+
+/* .text1{
+    font-size: 2rem;
+    margin: 4rem;
+    font-family: 'Raleway', sans-serif;
+} */
+
+
+.imagex{
+    margin-left: 2rem;
+    margin-top: 3rem;
+    overflow: hidden;
+    
+    
+}
+
+.imagex1{
+    border-radius: 20px;
+}
+
+.textl{
+    position: relative;
+    bottom: 15rem;
+    left: 20rem;
+}
+
+.darkx{
+    font-weight: bolder;
+    font-size: 2.4rem;
+    margin-left: 8rem;
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+.lightx{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.buttontell{
+
+    position: relative;
+    bottom: 11rem;
+    left: 34rem;
+}
+
+.panrama img{
+    width: 600px ;
+    margin-left: 1rem;
+    margin-right: 2.1rem;
+}
+
+.betterworld{
+    display: flex;
+    flex-direction: row;
+}
+
+.words{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bigbetter{
+    margin-top: 2rem;
+    font-family: Poppins,Inter,-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+
+    letter-spacing: -.01875rem;
+    line-height: 4.5rem; 
+}
+
+.xbetter{
+    color: #30cf72;
+}
+
+.smallbetter{
+    margin-top: 1.3rem;
+    font-family:  Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;;
+}
+
+
+.boxcancel{
+    background-color: #eafbf7;
+    margin-top: 5rem;
+    padding: 30px;
+
+}
+.cancel{
+    color: black;
+    text-align: center;
+    font-size: 2.625rem;
+    font-weight: 100;
+    line-height: 1.2;
+    font-family: Poppins,Inter,-apple-system,BlinkMacSystemFont,sans-serif;
+
+}
+
+.smallcancel{
+    margin-top: 1.3rem;
+    font-family:  Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+
+footer{
+    width: 1260px;
+    /* margin: 0 auto; */
+    
+
+    font-family: 'Raleway', sans-serif;
+  
+      display: flex;
+      margin-top: 150px;
+      /* background-color: rgba(255, 204, 204, 0.546); */
+      background-color: #eafbf7;
+      justify-content: space-around;    
+   }
+
+.logo1{
+    margin: 2rem 10rem 2rem 4rem;
+    font-weight: 600;
+    /* color: rgba(15, 26, 26, 0.909); */
+    color: black;
+    font-size: 2.9rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo1:hover{
+    cursor: pointer;
+    color: hsla(0, 0%, 0%, 0.587);
+}
+
+  
+   .logolast{
+      display: grid;
+      justify-content: center;
+   }
+  
+   .logolast img{
+      padding: 30px 0px;
+      width: 59px;
+      
+   }
+  
+   .links{
+      display: grid;
+      /* grid-template-columns: repeat( 3,1fr); */
+      grid-template-columns: 180px 180px 190px;
+      justify-items: start;
+      align-items: center;
+      gap:  34px 0px;
+      align-content: center;
+      margin-top: 15px;
+  
+      /* in flex if gap used, it gaps the boxes, hence li seperates, and hover works only on the text, instead if padding used, the  the hover will work upto the padding's lenght */
+  
+   }
+  
+   .links li{
+      
+       /* padding: 18px; */
+       font-size: 1.1rem;
+       font-weight: bold;
+       color: black;
+       list-style: none;
+       
+  
+      
+   }
+  
+   .logo-icon {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 37px;
+      
+  
+  
+   }
+  
+  
+   .links   :hover {
+      cursor: pointer;
+      color:hsla(0, 0%, 0%, 0.587);
+      
+  
+   }
+  
+    .logo-icon i:hover{
+      cursor: pointer;
+    }
+  
+   
+
+    .buttontell button{
+        font-size: 1.3rem;
+        border-radius: 10px;
+        padding: 15px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
+
+
+    /* css for contact us page */
+
+    .mcolor{
+        background-color: #eafbf7;
+    }
+    .contax{
+        padding-top: 2rem;
+        background-color: #eafbf7;
+        padding-bottom: 2rem;
+    }
+
+ .cont{
+    
+    font-family: Poppins,Inter,-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+     text-align: center;
+    letter-spacing: -.01875rem;
+    line-height: 4.5rem; 
+ }
+
+ .fill{
+    margin-top: 1.3rem;
+    font-family:  Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+
+    
+ }
+
+
+    .main-contact{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 4rem;
+        color: #4f5c65;
+        
+    }
+    .contaform{
+        margin-left: 4rem;
+        
+    }
+
+    
+
+
+
+    
+    /* Styles for the image slider */
+    .slider-container {
+      width: 1250px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      margin: 2rem;
+    }
+    
+    .slider {
+      width: 1600px; /* Total width of all images */
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    /* Styling for slide captions */
+    /* .slide-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    } */
+    
+    /* Button styles */
+    .slider-controls {
+      margin-top: 10px;
+      text-align: end;
+    }
+    
+    .slider-controls button {
+      background-color: #f1f1f1;
+      border: none;
+      color: #333;
+      padding: 8px 16px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    
+    /* Active button style */
+    .slider-controls button.active {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .arrowx{
+        
+        width: 30px;
+    }
+
+    /* <-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html,body{
+      min-width: 60vw;
+      min-height: 100vh;
+  }
+  
+  body {
+       background-color: #eafbf7;
+  }
+  .heder{
+      display: grid;
+      place-content: center center;
+  }
+  .hader{
+      font-size: 60px;
+  }
+  .hader:hover{
+      color: #297f3d;
+  }
+  .main1{
+   border: 2px solid rgba(30, 197, 30, 0.863) ; 
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+   
+  }
+  .main2{
+    border: 2px solid rgba(30, 197, 30, 0.863) ; 
+   border-radius: 10px;
+   margin-top: 30px;
+   padding-bottom: 30px;
+    
+   }
+  
+  .dstates {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    place-content: space-evenly;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    min-width: 60vw;
+    margin: 20px;
+  }
+  
+  .a1,.a2,.a3,.a4,.a5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 0.5rem; */
+    place-content: center center;
+    place-content: space-evenly;
+  }
+  
+  .a {
+    background-image: url(/NF/UP.jpg);
+    background-size: cover;
+  }
+  
+  .b {
+    background-image: url(/NF/delhi.jpg);
+    background-size: cover;
+  }
+  
+  .c {
+    background-image: url(/NF/MP.jpg);
+    background-size: cover;
+  }
+  
+  .d {
+    background-image: url(/NF/Gujarat.jpg);
+    background-size: cover;
+  }
+  
+  .e {
+    background-image: url(/NF/Maharashtra.jpg);
+    background-size: cover;
+  }
+  
+  .f {
+    background-image: url(/NF/Rajasthan.jpg);
+    background-size: cover;
+  }
+  
+  .g {
+    background-image: url(/NF/Kerela.jpg);
+    background-size: cover;
+  }
+  
+  .h {
+    background-image: url(/NF/Andhra\ Pradesh.jpg);
+    background-size: cover;
+  }
+  
+  .i {
+    background-image: url(/NF/Tamil\ Nadu.jpg);
+    background-size: cover;
+  }
+  
+  .j {
+    background-image: url(/NF/punjab.jpg);
+    background-size: cover;
+  }
+  
+  .k {
+    background-image: url(/NF/Karnataka.jpg);
+    background-size: cover;
+  }
+  
+  .li {
+    background-image: url(/NF/Himachal\ Pradesh.jpg);
+    background-size: cover;
+  }
+  
+  .m {
+    background-image: url(/NF/Orrisa.jpg);
+    background-size: cover;
+  }
+  
+  .n {
+    background-image: url(/NF/Chhattisgarh.jpg);
+    background-size: cover;
+  }
+  
+  .o {
+    background-image: url(/NF/Telengana.jpg);
+    background-size: cover;
+  }
+  
+  .a,.b,.c,.d,.e,.f,.g,.h,.i,.j,.k,.li,.m,.n,.o {
+    width: clamp(100px, 380px, 600px);
+    height: clamp(100px, 220px, 500px);
+    margin: 1rem;
+  
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border: 0px solid white;
+    border-radius: 10px;
+    background-position: center;
+    transition: transform 0.3s;
+  }
+  .state:hover,.state:focus {
+    transform: scale(1.1);
+    opacity: 85%;
+  }
+  .a:hover,.b:hover,.c:hover,.d:hover,.e:hover,.f:hover,.g:hover,.h:hover,.i:hover,.j:hover,.k:hover,.li:hover,.m:hover,.n:hover,.o:hover{
+    box-shadow: 5px 5px 5px #000;
+  }
+  /* Border Design */
+  .geometric-design {
+    position: relative;
+    display: inline-block;
+  }
+
+  .geometric-design::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #8FBC8F;
+    transform: rotate(45deg);
+  }
+  .geometric-design::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #8FBC8F;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="first.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="ultimate">
+        <video autoplay loop muted plays-inline class="video">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="container" id="main">
+            <div class="sign_up">
+                <?php
+
+                  // define variables and set to empty values
+                    function count_digit($number)
+                    {
+                    return strlen((string) $number);
+                    }
+
+                    function test_input($data)
+                    {
+
+                        $data = trim($data);
+
+                        $data = stripslashes($data);
+
+                        $data = htmlspecialchars($data);
+
+                        return $data;
+                    }
+
+                    $fnameErr = $lnameErr = $GenErr = $emailErr = $phnErr = $pass1Err = $pass2Err = "";
+                    $fname = $email = $pass1 = $pass2 =  "";
+                    $phn = NULL;
+
+                    $sw1 = $sw2 = $sw3 = $sw4 = $sw5 = $sw6 = $sw7 = 0;
+
+                    if (isset($_POST["done"])) {
+                        if (empty($_POST["fname"]) && isset($_POST['done'])) {
+
+                            $fnameErr = " *First Name is required";
+                        }
+                        if (!empty($_POST["fname"])) {
+
+                            $fname = test_input($_POST["fname"]);
+                            // $sw1=1;
+                        }
+                        // check if name only contains letters and whitespace
+
+                        if (!preg_match("/^[a-zA-Z-' ]*$/", $fname) && isset($_POST['done'])) {
+
+                            $fnameErr = " * Only letters and white space allowed";
+                        } else {
+                            $sw1 = 1;
+                        }
+                        if (empty($_POST["lname"])) {
+
+                            $lname = " ";
+                            $sw2 = 1;
+                        }
+                        if (!empty($_POST["lname"])) {
+
+                            $lname = test_input($_POST["lname"]);
+
+                            // check if name only contains letters and whitespace
+
+                            if (!preg_match("/^[a-zA-Z-' ]*$/", $lname) && isset($_POST['done'])) {
+
+                                $lnameErr = " * Only letters and white space allowed";
+                            } else {
+                                $sw2 = 1;
+                            }
+                        }
+                        if (empty($_POST["email"]) && isset($_POST['done'])) {
+
+                            $emailErr = " * Email is required";
+                        }
+                        if (!empty($_POST["email"])) {
+
+                            $email = test_input($_POST["email"]);
+
+                            // check if e-mail address is well-formed
+
+                            if (!filter_var($email, FILTER_VALIDATE_EMAIL) && isset($_POST['done'])) {
+
+                                $emailErr = " * Invalid email format";
+                            } else {
+                                $sw3 = 1;
+                            }
+                        }
+
+                        if (empty($_POST["gen"]) && isset($_POST['done'])) {
+
+                            $GenErr = " * Gender is required";
+                        }
+                        if (!empty($_POST["gen"])) {
+
+                            $gen = test_input($_POST["gen"]);
+                            $sw4 = 1;
+                        }
+
+                        if (empty($_POST["phn"]) && isset($_POST['done'])) {
+
+                            $phnErr = "* Phone number is required";
+                        }
+                        if (!empty($_POST["phn"])) {
+
+                            if (count_digit($_POST["phn"]) != 10 && isset($_POST['done'])) {
+                                $phnErr = "* Abe phone number sirf 10 digit ka hi hota hai";
+                            } else {
+                                $phn = test_input($_POST["phn"]);
+                                $sw5 = 1;
+                            }
+                        }
+
+
+                        if (empty($_POST["pass"]) && isset($_POST['done'])) {
+
+                            $pass1Err = "* password is required";
+                        }
+                        if (!empty($_POST["pass"])) {
+
+                            $pass1 = test_input($_POST["pass"]);
+                            if (strlen($pass1) >= 9 && isset($_POST['done'])) {
+                                $pass1Err = "** password must of 9 or more length";
+                                if (!preg_match("/^[a-zA-Z0-9' ]*$/", $pass1) && isset($_POST['done'])) {
+
+                                    $pass1Err = "***password only include  capital letter, samll letter, numbers ";
+                                }
+                            } else {
+                                $database = "ap_project";
+                                $server_name = "localhost";
+                                $user_name = "root";
+                                $password2 = "";
+                                $connectiond = mysqli_connect($server_name, $user_name, $password2, $database);
+
+                                $querye = "select * from data where password='$pass1'";
+                                $final1 = mysqli_query($connectiond, $querye);
+                                if (!$connectiond) {
+                                    die("Failed" . mysqli_connect_error());
+                                }
+                                // echo "Connection established successfully.";
+                                if (mysqli_num_rows($final1)) {
+                                    $pass1Err = "** already such  password exist make another password";
+                                } else {
+                                    $sw6 = 1;
+                                }
+                                mysqli_close($connectiond);
+                            }
+                        }
+
+
+                        if (empty($_POST["conf"]) && isset($_POST['done'])) {
+
+                            $pass2Err = "*confirm  password is required";
+                        }
+                        if (!empty($_POST["conf"])) {
+
+                            $pass2 = test_input($_POST["conf"]);
+                            if ($pass1 != $pass2 && isset($_POST['done'])) {
+                                $pass2Err = "*!* Password does not match ";
+                            } else {
+                                $sw7 = 1;
+                            }
+                        }
+                    }
+
+                ?>
+                <form action="rough2.html" method="post" autocomplete="off" overflow:scroll>
+                    <h1 class="create">Create Account</h1>
+
+                    <section>
+                        <label for="fname">First Name :</label>
+                        <input type="text" name="fname" id="fname">
+                        <span><?php echo  $fnameErr; ?></span>
+                    </section>
+
+                    <section>
+                        <label for="lname">Last Name :</label>
+                        <input type="text" name="lname" id="lname">
+                        <span><?php echo  $lnameErr; ?></span>
+                    </section>
+
+                    <section class="gender">
+                        <div class="gend">
+                            <label for="gen" class="genlab">Gender :</label>
+                            <input type="radio" name="gen" id="gen" value="M">Male
+                            <input type="radio" name="gen" id="gen" value="F">Female
+                            <input type="radio" name="gen" id="gen" value="O">Other
+                            <span><?php echo  $GenErr; ?></span>
+                        </div>
+                    </section>
+
+                    <section>
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email">
+                        <span><?php echo  $emailErr; ?></span>
+                    </section>
+
+                    <section>
+                        <label for="phn">Phone Number :</label>
+                        <select name="cocode" id="cocode">
+                            <option value="+7840">Ab +7840</option>
+                            <option value="+93">Af +93</option>
+                            <option value="+61">At +61</option>
+                            <option value="+43">Au +43</option>
+                            <option value="+374">Ar +374</option>
+                            <option value="+880">Bgl +880</option>
+                            <option value="+229">Be +229</option>
+                            <option value="+55">Br +55</option>
+                            <option value="+1">Ca +1</option>
+                            <option value="+53">Cu +53</option>
+                            <option value="+357">Cy +357</option>
+                            <option value="+20">Egy +20</option>
+                            <option value="+679">Fi +679</option>
+                            <option value="+33">Fra +33</option>
+                            <option value="+49">Ger +49</option>
+                            <option value="+30">Gre +30</option>
+                            <option value="+852">HK +852</option>
+                            <option value="+91" selected>Ind +91 </option>
+                            <option value="+62">Io +62</option>
+                            <option value="+39">Ita +39</option>
+                            <option value="+377">Mon +377</option>
+                            <option value="+977">Nep +977</option>
+                            <option value="+92">Pak +92</option>
+                            <option value="+51">Pe +51</option>
+                            <option value="+7">Rus +7</option>
+                        </select>
+                        <input type="number" name="phn" id="phn">
+                        <span><?php echo  $phnErr; ?></span>
+                    </section>
+
+                    <section>
+                        <label for="pass">Password :</label>
+                        <input type="text" name="pass" id="pass">
+                        <span><?php echo  $pass1Err; ?></span>
+                    </section>
+
+                    <section>
+                        <label for="conf">Confirm Password :</label>
+                        <input type="text" name="conf" id="conf">
+                        <span><?php echo  $pass2Err; ?></span>
+                    </section>
+
+                    <section class="sub">
+                        <input type="submit" value="Sign Up" name="done">
+                        <input type="reset" value="Reset">
+                    </section>
+                    <!-- <section>
+                     <p>Your Password is:
+                     <?php
+                        // if ($sw1 && $sw2 && $sw3 && $sw4 && $sw5 && $sw6 && $sw7)
+                        //     echo Succesfully ;
+                        //  echo "!",$sw1,$sw2,$sw3,$sw4,$sw5;
+                        ?>
+                        </p>
+                    </section> -->
+
+                    <?php
+                    if ($sw1 && $sw2 && $sw3 && $sw4 && $sw5 && $sw6 && $sw7) {
+                        $database = "ap_project";
+                        $server_name = "localhost";
+                        $user_name = "root";
+                        $password1 = "";
+                        $connectionr = mysqli_connect($server_name, $user_name, $password1, $database);
+
+                        if (!$connectionr) {
+                            die("Failed" . mysqli_connect_error());
+                        }
+                        $sw10 = 0;
+                        $phno = (string)$_POST["cocode"] . " " . (string)$phn;
+                        // echo "Connection established successfully.";
+                        $query10 = "insert into data (password,first_name,last_name,gender,email,phone_no) values('$pass1','$fname','$lname','$gen','$email','$phno')";
+                        $finalr = mysqli_query($connectionr, $query10);
+                        $msg = "";
+                        if (!$finalr) {
+                            die("ERROR:" . mysqli_error($connectionr));
+                        } else {
+                            $sw10 = 1;
+                        }
+
+                        mysqli_close($connectionr);
+
+                        if ($sw10 == 1) {
+                            echo '<p class="finalmsg"> 
+                             Succssefully Signed In 👍
+                          </p>';
+                        }
+                        // header('http://localhost/form.php');
+
+                    }
+                    ?>
+                </form>
+            </div>
+
+
+
+
+
+
+            <div class="sign_in">
+                <?php
+
+                $emailErrk = $pass1Errk = "";
+                $emailk = $pass1k = "";
+                $fnamek = $lnamek = $email1k = $pass2k =  "";
+                $phnk = NULL;
+
+
+                $sw1k = $sw2k =  0;
+
+                $swk = 0;
+
+                if (isset($_POST["done"])) {
+
+                    if (empty($_POST["email"])) {
+
+                        $emailErrk = " * Email is required";
+                    }
+                    if (!empty($_POST["email"])) {
+
+                        $emailk = test_input($_POST["email"]);
+
+                        // check if e-mail address is well-formed
+
+                        if (!filter_var($emailk, FILTER_VALIDATE_EMAIL)) {
+
+                            $emailErr = " * Invalid email format";
+                        } else {
+                            $sw1k = 1;
+                        }
+                    }
+
+
+                    if (empty($_POST["pass"])) {
+
+                        $pass1Errk = "* password is required";
+                    }
+                    if (!empty($_POST["pass"])) {
+
+                        $pass1k = test_input($_POST["pass"]);
+                        if (strlen($pass1) < 9) {
+                            $pass1Errk = "** password must of 9 or more length";
+                        }
+                        if (!preg_match("/^[a-zA-Z0-9' ]*$/", $pass1k)) {
+
+                            $pass1Errk = "***password only include  capital letter, samll letter, numbers ";
+                        } else {
+                            $sw2k = 1;
+                        }
+                    }
+                }
+
+                ?>
+
+                <form action="rough2.html" method="post" autocomplete="off" class="sign-up">
+
+                    <h1>Join Back <br><br></h1>
+
+                    <section>
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email">
+                        <span><?php echo  $emailErrk; ?></span>
+                    </section>
+
+                    <section>
+                        <label for="pass">Password :</label>
+                        <input type="password" name="pass" id="pass">
+                        <span><?php echo  $pass1Errk; ?></span>
+                    </section>
+
+                    <?php
+                    
+                    if ($sw1 && $sw2) {
+                        $database1k = "ap_project";
+                        $server_namek = "localhost";
+                        $user_namek = "root";
+                        $password2k = "";
+                        $connectiondk = mysqli_connect($server_namek, $user_namek, $password2k, $database1k);
+                        if (!$connectiondk) {
+                            die("Failed" . mysqli_connect_error());
+                        }
+                        // echo "Connection established successfully.";
+                        $queryek = "select * from data where password='$pass1k'and email='$emailk'";
+                        $final1k = mysqli_query($connectiondk, $queryek);
+                        if (mysqli_num_rows($final1k) == 1) {
+                            $perk = mysqli_fetch_assoc($final1k);
+                            $fnamek = $perk["first_name"];
+                            $lnamekk = $perk["last_name"];
+                            $email1k = $perk["email"];
+                            $pass2k = $pass1k;
+                            $phnk = $perk["phone_no"];
+
+
+                            $swk++;
+                            // $ac = (string)$fname[0] . (string)$lname[0];
+                        }
+                        mysqli_close($connectiondk);
+                    }
+                    ?>
+
+
+                    <input type="submit" value="Sign Up" name="done">
+                    <input type="reset" value="Reset">
+
+                    <?php
+                    if ($swk == 1) {
+                        echo '<p class="account"> 
+                    Succssefully Signed In 👍<span>', '</span>
+                 </p>';
+                    } else if ($swk == 0 && isset($_POST['done'])) {
+                        echo "No such User exist";
+                    }
+                    ?>
+                </form>
+            </div>
+
+
+            <div class="overlay-container">
+                <div class="overlay">
+
+                    <div class="overlay-left">
+                        <h1>Welcome Back</h1>
+                        <p> Are You Ready To Travel ?<br><br> If You already have an account with us then please using your login credentials</p>
+                        <button id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-right">
+                        <h1>Hello, Traveller</h1>
+                        <p>Don't have an account with us ? <br> <br> Just follow the link and sign up with Us
+                        </p>
+                        <button id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script type="text/javascript">
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const main = document.getElementById('main');
+
+            signUpButton.addEventListener('click', () => {
+                main.classList.add("right-panel-active");
+            });
+            signInButton.addEventListener('click', () => {
+                main.classList.remove("right-panel-active");
+            });
+        </script>
+
+    </div>
+
+</body>
+
+</html>

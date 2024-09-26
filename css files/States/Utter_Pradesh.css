@@ -1,0 +1,575 @@
+/* do not change this thing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(taj.jpg);
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* upto this */
+/* do not change this sectionn */
+.header {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.569);
+}
+
+.main {
+  margin-left: 7.5%;
+  background-image: url(bod.jpeg);
+  box-shadow: 10px 10px 10px 2px rgb(60, 59, 59);
+  width: 85%;
+  background-size: 100% 100%;
+}
+
+.location {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(bod.jpg);
+}
+
+.detail {
+  background-color: rgba(255, 255, 255, 0.336);
+  border-left: black 2px solid;
+  width: 34%;
+  height: auto;
+  min-width: 350px;
+}
+
+p {
+  font-size: 20px;
+  padding: 5px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.name {
+  background-color: rgba(255, 255, 255, 0.628);
+  width: 100%;
+  height: auto;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Taken help from web to create scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(103, 103, 103);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(85, 82, 82, 0.361);
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 40%;
+  width: 20%;
+  height: 12%;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.description {
+  min-width: 350px;
+  background-color: rgba(255, 255, 255, 0.336);
+  width: 30%;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.value {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 16px;
+  letter-spacing: 0;
+  min-height: 400px;
+}
+
+.description:hover {
+  background-color: rgba(255, 255, 255, 0.555);
+}
+
+/* upto this */
+
+/* rename the class and keep using for same value */
+.slider1 {
+  border-radius: 0.5rem;
+  min-width: 350px;
+  width: 35%;
+  min-width: 350px;
+  height: 400px;
+  background-image: url(tajmahal1.jpeg);
+  background-size: 100% 100%;
+}
+
+.slider1:hover {
+  animation: slider1 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+/* Changes by Dev */
+
+@keyframes slider1 {
+  0% {
+    background-image: url(tajmahal1.jpeg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(tajmahal2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(tajmahal3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(tajmahal4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(tajmahal5.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 2 */
+.slider2 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(fts1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider2:hover {
+  animation: slider2 30s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider2 {
+  12.5% {
+    background-image: url(fts1.jpg);
+    background-size: 100% 100%;
+  }
+
+  25% {
+    background-image: url(fts2.jpg);
+    background-size: 100% 100%;
+  }
+
+  37.5% {
+    background-image: url(fts3.jpg);
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-image: url(fts4.jpg);
+    background-size: 100% 100%;
+  }
+
+  62.5% {
+    background-image: url(fts5.jpg);
+    background-size: 100% 100%;
+  }
+
+  75% {
+    background-image: url(fts6.jpg);
+    background-size: 100% 100%;
+  }
+
+  87.5% {
+    background-image: url(fts7.jpg);
+    background-size: 100% 100%;
+  }
+
+  90% {
+    background-image: url(fts8.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 3 */
+.slider3 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(af1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider3:hover {
+  animation: slider3 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider3 {
+  0% {
+    background-image: url(af1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(af2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(af3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(af4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(af5.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 4 */
+.slider4 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(vara1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider4:hover {
+  animation: slider40 35s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider40 {
+    12.5% {
+        background-image: url(vara1.jpg);
+        background-size: 100% 100%;
+      }
+    
+      25% {
+        background-image: url(vara2.jpg);
+        background-size: 100% 100%;
+      }
+    
+      37.5% {
+        background-image: url(vara3.jpg);
+        background-size: 100% 100%;
+      }
+    
+      50% {
+        background-image: url(vara4.jpg);
+        background-size: 100% 100%;
+      }
+    
+      62.5% {
+        background-image: url(vara5.jpg);
+        background-size: 100% 100%;
+      }
+    
+      75% {
+        background-image: url(vara6.jpg);
+        background-size: 100% 100%;
+      }
+    
+      87.5% {
+        background-image: url(vara7.jpg);
+        background-size: 100% 100%;
+      }
+    
+      90% {
+        background-image: url(vara8.jpg);
+        background-size: 100% 100%;
+      }
+}
+
+/* location 5 */
+.slider5 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(toi1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider5:hover {
+  animation: slider5 18s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider5 {
+  0% {
+    background-image: url(toi1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(toi2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(toi3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(toi4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+.slider6:hover {
+  animation: slider6 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider6 {
+  0% {
+    background-image: url(jm1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(jm2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(jm3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(jm4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(jm5.jpg);
+    background-size: 100% 100%;
+  }
+}
+.slider6 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(jm1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider7:hover {
+  animation: slider7 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider7 {
+  0% {
+    background-image: url(vrindavan1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(vrindavan2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(vrindavan3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(vrindavan4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(vrindavan5.jpg);
+    background-size: 100% 100%;
+  }
+}
+.slider7 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(vrindavan1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider8 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(at1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider8:hover {
+  animation: slider8 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider8 {
+  0% {
+    background-image: url(at1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(at2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(at3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(at4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(at5.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+.slider9 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(luck1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider9:hover {
+  animation: slider9 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider9 {
+    12.5% {
+        background-image: url(luck1.jpg);
+        background-size: 100% 100%;
+      }
+    
+      25% {
+        background-image: url(luck2.jpg);
+        background-size: 100% 100%;
+      }
+    
+      37.5% {
+        background-image: url(luck4.jpg);
+        background-size: 100% 100%;
+      }
+    
+      50% {
+        background-image: url(luck3.jpg);
+        background-size: 100% 100%;
+      }
+    
+      62.5% {
+        background-image: url(luck5.jpg);
+        background-size: 100% 100%;
+      }
+    
+      75% {
+        background-image: url(luck6.jpg);
+        background-size: 100% 100%;
+      }
+    
+      87.5% {
+        background-image: url(luck7.jpg);
+        background-size: 100% 100%;
+      }
+    
+      90% {
+        background-image: url(luck8.jpg);
+        background-size: 100% 100%;
+      }
+}
+
+.slider1,
+.slider2,
+.slider3,
+.slider4,
+.slider5 {
+  border-radius: 10.5%;
+}
+video{
+  width: 100%;
+  height: 100%;
+}
+.top1{
+  width: 100%;
+  height: 70vh;
+  
+}
+.head{
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-bottom: 2%;
+  padding: 0.5%;
+}

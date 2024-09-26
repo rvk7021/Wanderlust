@@ -1,0 +1,573 @@
+/* do not change this thing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(taj.jpg);
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* upto this */
+/* do not change this sectionn */
+.header {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.569);
+}
+
+.main {
+  margin-left: 7.5%;
+  background-image: url(bod.jpeg);
+  box-shadow: 10px 10px 10px 2px rgb(60, 59, 59);
+  width: 85%;
+  background-size: 100% 100%;
+}
+
+.location {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(bod.jpg);
+}
+
+.detail {
+  background-color: rgba(255, 255, 255, 0.336);
+  border-left: black 2px solid;
+  width: 34%;
+  height: auto;
+  min-width: 350px;
+}
+
+p {
+  font-size: 20px;
+  padding: 5px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+video{
+  width: 100%;
+  height: 100%;
+}
+.name {
+  background-color: rgba(255, 255, 255, 0.628);
+  width: 100%;
+  height: auto;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Taken help from web to create scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(103, 103, 103);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(85, 82, 82, 0.361);
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 40%;
+  width: 20%;
+  height: 12%;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.description {
+  min-width: 350px;
+  background-color: rgba(255, 255, 255, 0.336);
+  width: 30%;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.value {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 16px;
+  letter-spacing: 0;
+  min-height: 400px;
+}
+
+.description:hover {
+  background-color: rgba(255, 255, 255, 0.555);
+}
+
+/* upto this */
+
+/* rename the class and keep using for same value */
+.slider1 {
+  border-radius: 0.5rem;
+  min-width: 350px;
+  width: 35%;
+  min-width: 350px;
+  height: 400px;
+  background-image: url(kutch1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider1:hover {
+  animation: slider1 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+/* Changes by Dev */
+
+@keyframes slider1 {
+  0% {
+    background-image: url(kutch1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(kutch2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(kutch3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(kutch4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(kutch5.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 2 */
+.slider2 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(sou1.jpeg);
+  background-size: 100% 100%;
+}
+
+.slider2:hover {
+  animation: slider2 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider2 {
+  0% {
+    background-image: url(sou1.jpeg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(sou2.jpeg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(sou3.jpeg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(sou4.jpeg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(sou5.jpeg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 3 */
+.slider3 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(som1.jpeg);
+  background-size: 100% 100%;
+}
+
+.slider3:hover {
+  animation: slider3 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider3 {
+  0% {
+    background-image: url(som1.jpeg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(som2.jpeg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(som3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(som4.jpeg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(som5.jpeg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 4 */
+.slider4 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(lvp1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider4:hover {
+  animation: slider4 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider4 {
+  0% {
+    background-image: url(lvp1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(lvp2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(lvp3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(lvp4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(lvp5.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 5 */
+.slider5 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(sapu1.jpeg);
+  background-size: 100% 100%;
+}
+
+.slider5:hover {
+  animation: slider5 18s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider5 {
+  0% {
+    background-image: url(sapu1.jpeg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(sapu2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(sapu3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(sapu4.jpeg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(sapu5.jpeg);
+    background-size: 100% 100%;
+  }
+}
+
+.slider6:hover {
+  animation: slider6 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider6 {
+  0% {
+    background-image: url(dwk1.jpeg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(dwk2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(dwk3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(dwk4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(dwk5.jpeg);
+    background-size: 100% 100%;
+  }
+}
+.slider6 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(dwk1.jpeg);
+  background-size: 100% 100%;
+}
+
+.slider7:hover {
+  animation: slider7 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider7 {
+  0% {
+    background-image: url(juna1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(juna2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(juna3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(juna4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(juna5.jpeg);
+    background-size: 100% 100%;
+  }
+}
+.slider7 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(juna1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider8 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(ranikvav1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider8:hover {
+  animation: slider8 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider8 {
+  0% {
+    background-image: url(ranikvav1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(ranikvav2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(ranikvav3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(ranikvav4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(ranikvav5.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+.slider9 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(rajkot1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider9:hover {
+  animation: slider9 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider9 {
+  0% {
+    background-image: url(rajkot1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(rajkot2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(rajkot3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(rajkot4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(rajkot5.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+.slider10 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(ahem1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider10:hover {
+  animation: slider10 25s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  background-color: white;
+}
+
+@keyframes slider10 {
+  12% {
+    background-image: url(ahem2.jpeg);
+    background-size: 100% 100%;
+  }
+
+  30% {
+    background-image: url(ahem3.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(ahem4.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(ahem5.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(ahem6.jpg);
+    background-size: 100% 100%;
+  }
+}
+.slider1,
+.slider2,
+.slider3,
+.slider4,
+.slider5 {
+  border-radius: 10.5%;
+}
+ 
+.top1{
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  margin-bottom:4%;
+  background-position-x: center;
+}
+.head{
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-bottom: 2%;
+  padding: 0.5%;
+}

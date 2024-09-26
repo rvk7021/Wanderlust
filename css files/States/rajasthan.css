@@ -1,0 +1,382 @@
+/* do not change this thing */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(taj.jpg);
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+ /* upto this */
+/* do not change this sectionn */
+.header{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 0.569);
+}
+.main{
+    margin-left: 7.5%;
+    background-image: url(bod.jpeg);
+    box-shadow: 10px 10px 10px 2px black;
+    width: 85%;
+    background-size: 100% 100%;
+}
+.location{  
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+
+}
+.detail{
+    background-color: rgba(255, 255, 255, 0.336);
+    border-left: black 2px solid;
+    width: 34%;
+    min-width: 350px;
+   
+}
+
+p{  
+    font-size: 20px;
+    padding: 5px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.name{
+    background-color: rgba(255, 255, 255, 0.628);
+    width:100%;
+    height: auto;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    text-align: center;
+}
+button{
+    border-radius: 5px;
+    margin-top:3%;
+    margin-left: 40%;
+    width: 20%;
+    height: 12%;
+    background-color: black;
+}
+a{
+    text-decoration: none; color: white;
+    font-size: 20px;
+}
+.description{
+    min-width: 350px;
+    background-color: rgba(255, 255, 255, 0.336);
+    width: 30%;
+    height: 100%;
+    overflow-y:scroll ;
+}
+.value{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.description:hover{
+    background-color:rgba(255, 255, 255, 0.555);
+}
+
+/* Taken help from web to create scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(103, 103, 103);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(85, 82, 82, 0.361);
+    border-radius: 10px;
+  }
+
+
+
+
+/* upto this */
+video{
+    width: 100%;
+    height: 100%;
+}
+.top1{
+    width: 100%;
+    height: 70vh;
+    margin-bottom:4%;
+}
+.head{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 2%;
+    padding: 0.5%;
+}
+/* rename the class and keep using for same value */
+/* location 1 */
+.slider1{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(jcity1.jpeg);
+    background-size: 100% 100%;
+}
+.slider1:hover{
+    animation: slider1 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider1{
+    0%{ background-image: url(jcity1.jpeg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(jcity2.jpeg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(jcity3.jpeg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(jcity4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(jcity5.jpg);
+        background-size: 100% 100%;
+    }
+}
+/* location 2 */
+.slider2{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(jamber1.jpg);
+    background-size: 100% 100%;
+}
+.slider2:hover{
+    animation: slider2 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider2{
+    0%{ background-image: url(jamber1.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(jamber2.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(jamber3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(jamber4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(jamber5.jpeg);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 3 */
+.slider3{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(jjfort1.jpg);
+    background-size: 100% 100%;
+}
+.slider3:hover{
+    animation: slider3 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider3{
+    0%{ background-image: url(jjfort2.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(jjfort3.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(jjfort2.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(jjfort4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(jjfort5.webp);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 4 */
+.slider4{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(rchittor1.jpg);
+    background-size: 100% 100%;
+}
+.slider4:hover{
+    animation: slider4 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider4{
+    0%{ background-image: url(rchittor2.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(rchittor1.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(rchittor3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(rchittor4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(rchittor5.webp);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 5 */
+.slider5{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(umaid1.webp);
+    background-size: 100% 100%;
+}
+.slider5:hover{
+    animation: slider5 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider5{
+    0%{ background-image: url(umaid1.webp);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(umaid2.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(umaid3.webp);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(umaid4.jpeg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(umaid5.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+/* location 6 */
+.slider6{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(meh1.webp);
+    background-size: 100% 100%;
+}
+.slider6:hover{
+    animation: slider6 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider6{
+    0%{ background-image: url(meh1.webp);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(meh2.jpg);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(meh3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(meh4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(meh5.jpg);
+        background-size: 100% 100%;
+    }
+}
+/* location 7 */
+.slider7{
+    border-radius: 0.5rem;
+    min-width: 350px;
+    width:35%;
+    min-width:350px;
+    height: auto;
+    background-image: url(jun1.jpg);
+    background-size: 100% 100%;
+}
+.slider7:hover{
+    animation: slider7 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+}
+
+@keyframes slider7{
+    0%{ background-image: url(jun1.jpg);
+        background-size: 100% 100%;
+
+    }
+   20%{
+        background-image: url(jun2.webp);
+        background-size: 100% 100%;
+    }
+    40%{ background-image: url(jun3.jpg);
+        background-size: 100% 100%;
+    }
+    60%{background-image: url(jun4.jpg);
+        background-size: 100% 100%;
+    }
+    80%{ background-image: url(jun5.webp);
+        background-size: 100% 100%;
+    }
+}
+
+
+

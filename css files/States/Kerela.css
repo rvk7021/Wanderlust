@@ -1,0 +1,511 @@
+/* do not change this thing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url(taj.jpg);
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* upto this */
+/* do not change this sectionn */
+.header {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.569);
+}
+
+.main {
+  margin-left: 7.5%;
+  background-image: url(bod.jpeg);
+  box-shadow: 10px 10px 10px 2px rgb(60, 59, 59);
+  width: 85%;
+  background-size: 100% 100%;
+}
+
+.location {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(bod.jpg);
+}
+
+.detail {
+  background-color: rgba(255, 255, 255, 0.336);
+  border-left: black 2px solid;
+  width: 34%;
+  height: auto;
+  min-width: 350px;
+}
+
+p {
+  font-size: 20px;
+  padding: 5px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.name {
+  background-color: rgba(255, 255, 255, 0.628);
+  width: 100%;
+  height: auto;
+  border: none;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Taken help from web to create scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(103, 103, 103);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(85, 82, 82, 0.361);
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 40%;
+  width: 20%;
+  height: 12%;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.description {
+  min-width: 350px;
+  background-color: rgba(255, 255, 255, 0.336);
+  width: 30%;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.value {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 16px;
+  letter-spacing: 0;
+  min-height: 400px;
+}
+
+.description:hover {
+  background-color: rgba(255, 255, 255, 0.555);
+}
+
+/* upto this */
+
+/* rename the class and keep using for same value */
+.slider1 {
+  border-radius: 0.5rem;
+  min-width: 350px;
+  width: 35%;
+  min-width: 350px;
+  height: 400px;
+  background-image: url(alle1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider1:hover {
+  animation: slider1 15s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+/* Changes by Dev */
+
+@keyframes slider1 {
+  0% {
+    background-image: url(alle1.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(alle2.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(alle3.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(alle4.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(alle5.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 2 */
+.slider2 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(mun1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider2:hover {
+  animation: slider2 60s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider2 {
+  5% {
+    background-image: url(mun1.jpg);
+    background-size: 100% 100%;
+  }
+
+  10% {
+    background-image: url(mun2.jpeg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(mun3.jpeg);
+    background-size: 100% 100%;
+  }
+
+  30% {
+    background-image: url(mun4.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(mun5.jpg);
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-image: url(mun6.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(mun7.jpg);
+    background-size: 100% 100%;
+  }
+
+  70% {
+    background-image: url(mun8.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(mun9.jpg);
+    background-size: 100% 100%;
+  }
+
+  90% {
+    background-image: url(mun10.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 3 */
+.slider3 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(wan1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider3:hover {
+  animation: slider3 60s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider3 {
+  5% {
+    background-image: url(wan1.jpg);
+    background-size: 100% 100%;
+  }
+
+  10% {
+    background-image: url(wan2.jpg);
+    background-size: 100% 100%;
+  }
+
+  20% {
+    background-image: url(wan3.jpg);
+    background-size: 100% 100%;
+  }
+
+  30% {
+    background-image: url(wan4.jpg);
+    background-size: 100% 100%;
+  }
+
+  40% {
+    background-image: url(wan5.jpg);
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-image: url(wan6.jpg);
+    background-size: 100% 100%;
+  }
+
+  60% {
+    background-image: url(wan7.jpg);
+    background-size: 100% 100%;
+  }
+
+  70% {
+    background-image: url(wan8.jpg);
+    background-size: 100% 100%;
+  }
+
+  80% {
+    background-image: url(wan9.jpg);
+    background-size: 100% 100%;
+  }
+
+  90% {
+    background-image: url(wan10.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 4 */
+.slider4 {
+  border-radius: 10.5%;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(vka1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider4:hover {
+  animation: slider40 35s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider40 {
+  0% {
+    background-image: url(vka2.jpg);
+    background-size: 100% 100%;
+  }
+
+  12.5% {
+    background-image: url(vka3.jpg);
+    background-size: 100% 100%;
+  }
+
+  25% {
+    background-image: url(vka4.jpg);
+    background-size: 100% 100%;
+  }
+
+  37.5% {
+    background-image: url(vka5.jpg);
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-image: url(vka6.jpg);
+    background-size: 100% 100%;
+  }
+
+  62.5% {
+    background-image: url(vka7.jpg);
+    background-size: 100% 100%;
+  }
+
+  75% {
+    background-image: url(vka8.jpg);
+    background-size: 100% 100%;
+  }
+
+  87.5% {
+    background-image: url(vka9.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+/* location 5 */
+.slider5 {
+  border-radius: 0.5rem;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  background-image: url(kuma1.jpg);
+  background-size: 100% 100%;
+}
+
+.slider5:hover {
+  animation: slider5 36s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: white;
+}
+
+@keyframes slider5 {
+  0% {
+    background-image: url(kuma1.jpg);
+    background-size: 100% 100%;
+  }
+
+  12.5% {
+    background-image: url(kuma2.jpg);
+    background-size: 100% 100%;
+  }
+
+  25% {
+    background-image: url(kuma3.jpg);
+    background-size: 100% 100%;
+  }
+
+  37.5% {
+    background-image: url(kuma4.jpg);
+    background-size: 100% 100%;
+  }
+
+  50% {
+    background-image: url(kuma6.jpg);
+    background-size: 100% 100%;
+  }
+
+  62.5% {
+    background-image: url(kuma5.jpg);
+    background-size: 100% 100%;
+  }
+
+  75% {
+    background-image: url(kuma7.jpg);
+    background-size: 100% 100%;
+  }
+
+  87.5% {
+    background-image: url(kuma8.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+.slider1,
+.slider2,
+.slider3,
+.slider4,
+.slider5 {
+  border-radius: 10.5%;
+}
+.top1{
+  width: 100%;
+  height: 70vh;
+  background-image: url(https://assets.traveltriangle.com/blog/wp-content/uploads/2014/11/Allepey-in-Kerala-TravelTriangle1.jpg);
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+  margin-bottom:4%;
+  background-position-x: center;
+}
+.head{
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-bottom: 2%;
+  padding: 0.5%;
+}
+
+
+/* navigation panel */
+/*  */
+.information{
+  text-decoration: none;
+  color: black;
+}
+
+.gridhead{
+    display: flex;
+    align-content: center;
+    /* background-color: rgba(40, 165, 107, 0.603); */
+    opacity: .98;
+      background-color: #eafbf7;
+      color:black;
+    
+      
+}
+
+.logo{
+    margin: 2rem 10rem 2rem 4rem;
+     font-weight: 600;
+     /* color: rgba(15, 26, 26, 0.909); */
+     
+     font-size: 2.9rem;
+     font-family: 'Raleway', sans-serif;
+      
+}
+
+.l{
+    margin-top: 3rem;
+         margin-left: 22rem;
+         /* color:  rgba(15, 26, 26, 0.909); */
+         
+         font-family: 'Raleway', sans-serif;
+         font-size: 1.1rem;
+}
+
+.ll{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    /* color:  rgb(15, 26, 26); */
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+
+.logo:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.l:hover{
+    cursor: pointer;
+    color: green;
+}
+
+.ll:hover{
+    cursor: pointer;
+    color: green;
+   
+}
